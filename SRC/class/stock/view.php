@@ -203,7 +203,7 @@ function subStockView($param)
 //
 //仕入管理編集画面
 //
-function subStockEditView($param)
+function fnStockEditCheck($param)
 {
 
 ?>
