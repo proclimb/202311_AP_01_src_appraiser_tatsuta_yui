@@ -169,9 +169,7 @@ function subSellView($param)
 			</table>
 		</div>
 
-		<?php
-		$sPage = fnPage($count, $param["sPage"], 'sellSearch');
-		?>
+
 
 	</form>
 <?php
