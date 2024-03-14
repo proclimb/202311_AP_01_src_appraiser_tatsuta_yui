@@ -443,6 +443,7 @@ function subFManagerViewEdit()
 	$sName         = htmlspecialchars($_REQUEST['sName']);
 	$sRoom         = htmlspecialchars($_REQUEST['sRoom']);
 	$sNote         = htmlspecialchars($_REQUEST['sNote']);
+	$sClassNo      = htmlspecialchars($_REQUEST['sClassNo']);
 
 	$orderBy = $_REQUEST['orderBy'];
 	$orderTo = $_REQUEST['orderTo'];
@@ -486,16 +487,15 @@ function subFManagerViewEdit()
 			<input type="hidden" name="fMNo" value="<?php print $fMNo; ?>" />
 			<input type="hidden" name="pdfNo" value="<?php print $pdfNo; ?>" />
 			<input type="hidden" name="docNo" value="<?php print $docNo; ?>" />
-
-			<table border="0" cellpadding="5" cellspacing="1">
-				<tr>
-					<th>備考</th>
-					<td><textarea name="note" cols="50" rows="10"><?php print $note; ?></textarea></td>
-				</tr>
-				<tr>
-					<th>PDFファイル<?php print $purpose; ?></th>
-					<td><input type="file" name="pdfFile" /></td>
-				</tr>
+			<input type="hidden" name="sClassNo" value="<?php print $sClassNo ?>" <table border="0" cellpadding="5" cellspacing="1">
+			<tr>
+				<th>備考</th>
+				<td><textarea name="note" cols="50" rows="10"><?php print $note; ?></textarea></td>
+			</tr>
+			<tr>
+				<th>PDFファイル<?php print $purpose; ?></th>
+				<td><input type="file" name="pdfFile" /></td>
+			</tr>
 			</table>
 
 			<a href="javascript:fnFManagerViewEditCheck();"><img src="./images/<?php print $btnImage; ?>" /></a>　
